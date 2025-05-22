@@ -60,11 +60,13 @@ class ProyectoController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  \App\Models\Proyecto  $proyecto
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Proyecto $proyecto)
+    public function edit($id)
     {
-        //
+        $proyecto=Proyecto::find($id);
+        return view("projects/update", compact('proyecto'));
     }
 
     /**
