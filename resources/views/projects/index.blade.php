@@ -93,7 +93,7 @@
         </table>
       </div>
     </div>
-    <div class="mt-3 row">
+    <div class="mt-4 row">
       <div class="col">
         <nav aria-label="...">
           <ul class="pagination justify-content-center">
@@ -110,7 +110,7 @@
             </li>
           </ul>
         </nav>
-        <p class="font-monospace">© Fabian 2025. Todos los derechos reservados</p>
+        <p class="mt-5 font-monospace">© Fabian 2025. Todos los derechos reservados</p>
       </div>
     </div>
   </div>

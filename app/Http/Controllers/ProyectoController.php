@@ -24,11 +24,12 @@ class ProyectoController extends Controller
     /**
      * Show the form for creating a new resource.
      *
+     * @param \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function create()
     {
-        //
+        return view("projects/new");
     }
 
     /**
@@ -39,7 +40,9 @@ class ProyectoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Proyecto::create($request->all());
+        return redirect('project/')
+            ->with('success','Proyecto creado satisfactoriamente.');
     }
 
     /**
